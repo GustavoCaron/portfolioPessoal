@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Gustavo Caron</title>
+</head>
+<style>
+    header {
+        background-color: hsl(0, 0%, 16%);
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    header span {
+        color: #ff3131;
+    }
+    
+    .header {
+        display: flex;
+        max-height: 70px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header ul {
+        display: flex;
+        list-style: none;
+        
+    }
+
+    .header ul li {
+        padding: 20px;
+    }
+    
+    .logo a p {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3s normal;
+    }
+
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    a:hover > p span {
+        color: #fff;
+    }
+
+    a {
+        position: relative;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+}
+
+
+a:focus:after,
+a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -4px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ff3131;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 0.4s;
+  transition-property: width, left;
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"><p>&lt;LuisGustavo<span>/</span>&gt;</p></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="">SOBRE MIM</a></li>
+                <li><a href="">HABILIDADES</a></li>
+                <li><a href="">EXPERIÊNCIA</a></li>
+                <li><a href="">PROJETOS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
