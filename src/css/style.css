@@ -1,0 +1,164 @@
+.header {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 60px;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header .logo {
+    font-size: 25px;
+}
+
+.header a {
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 60px;
+}
+
+.container-principal .informacoes {
+    font-size: 60px;
+}
+
+.container-principal span {
+    color: #ff3131;
+}
+
+.container-principal img {
+    width: 500px;
+}
+
+.container-principal:after{
+    content: url('../img/seta.png');
+    position: absolute;
+    height: 35px;
+    bottom: 30px;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes downarrow {
+    0% {-webkit-transform: translateY(-0.4em);opacity: 0.4;}
+    100% {-webkit-transform: translateY(0em); opacity: 0.9;}
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#sobre {
+    padding-top: 130px;    
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    width: 75%;
+}
+
+.titulo a {
+    transition: 0.2s ease;
+}
+
+.titulo a:hover {
+    transform: scale(1.1);
+}
+
+#sobre .conteudo-sobre {
+    display: flex;
+    gap: 200px;
+    width: 75%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.linha-temporal {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+figcaption {
+    position: relative;
+}
+
+
+figure::after {
+    content: "";
+    border: 1px dashed black;
+    height: 40px;
+    position: absolute;
+}
+
+figure .logo {
+    position: relative;
+    bottom: -55px;
+    transition: 0.3s ease;
+}
+
+figure:hover > .logo {
+    transform: scale(1.1);
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo-habilidades {
+    display: flex;
+    width: 75%;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ff3131;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card::before {
+    padding-bottom: 10px;
+    z-index: 1;
+    background-color: #fff;
+}
