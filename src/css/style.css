@@ -328,10 +328,102 @@ figure:hover > .logo {
     font-size: 20px;
 }
 
-  .close {
+.close {
     position: absolute;
     top: 20px;
     right: 20px;
     color: #db1f1f;
     text-decoration: none;
-  }
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.conteudo-contato {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.links-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.navegacao-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navegacao-contato a {
+    width: 400px;
+    height: 50px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ff3131;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+.navegacao-contato .linkedin, .whatsapp, .instagram, .telefone {
+    background-color: #ff3131;
+    height: 100%;
+    padding: 0px 20px;
+    border: 1px solid #ff3131;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao-contato .telefone {
+    background-color: #ff3131;
+    height: 100%;
+    padding: 0px 23px;
+    border: 1px solid #ff3131;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navegacao-contato .discord {
+    background-color: #ff3131;
+    height: 100%;
+    padding: 0px 13px;
+    border: 1px solid #ff3131;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.navegacao-contato a:hover {
+    background-color: #ff3131;
+    border: 1px solid #292929;
+    color: #292929;
+}
+
+.links-contato a:hover > span {
+    background-color: #292929;
+    color: #fff;
+}
+
+.rodape {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+}
+
+.rodape span {
+    color: #ff3131;
+}
