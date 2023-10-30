@@ -383,7 +383,7 @@ figure:hover > .logo {
 
 .navegacao-contato a {
     width: 400px;
-    height: 50px;
+    height: 70px;
     background-color: #292929;
     display: flex;
     align-items: center;
@@ -396,7 +396,7 @@ figure:hover > .logo {
 .navegacao-contato .linkedin, .whatsapp, .instagram, .telefone {
     background-color: #ff3131;
     height: 100%;
-    padding: 0px 20px;
+    padding: 20px 20px;
     border: 1px solid #ff3131;
     margin-right: 20px;
     display: flex;
