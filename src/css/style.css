@@ -23,6 +23,10 @@
     font-size: 25px;
 }
 
+.header .logo span {
+    color: #ff3131;
+}
+
 .header a, .header nav ul li a, .header nav label {
     padding-left: 20px;
     color: #fff;
@@ -170,7 +174,7 @@ figure:hover > .logo {
 .card {
     border: 1px solid #ff3131;
     border-bottom: 5px solid #ff3131;
-    border-radius: 10px;
+    border-radius: 25px 10px 10px 10px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -435,6 +439,108 @@ figure:hover > .logo {
     color: #fff;
 }
 
+.navegacao-email {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 25px;
+    gap: 40px;
+    background-color: #292929;
+    border: 3px solid #ff3131;
+    border-radius: 50px;
+}
+
+.navegacao-email .box-usuario {
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navegacao-email .box-usuario input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #ff3131;
+    outline: none;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navegacao-email .box-usuario label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.navegacao-email .box-usuario input:focus ~ .label-form,
+.navegacao-email .box-usuario input:valid ~ .label-form {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+}
+
+textarea#mensagem-email {
+    width: 275px;
+    height: 220px;
+    border-radius: 10px;
+    border: 1px solid #ff3131;
+    background-color: transparent;
+    display: flex;
+    margin: 0;
+    color: #FFF;
+    align-items: start;
+    justify-content: start;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    resize: none;
+    transition: 0.2s ease-out;
+}
+
+textarea#mensagem-email:focus {
+    transform: scale(1.05);
+}
+
+.navegacao-email button {
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #ff3131;
+    border-radius: 10px;
+    width: 125px;
+    height: 35px;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.3s ease;
+}
+
+.navegacao-email button i {
+    font-size: 15px;
+    transition: 0.3s linear;
+}
+
+.navegacao-email button:hover {
+    cursor: pointer;
+}
+
+.navegacao-email button:hover {
+    cursor: pointer;
+    color: #ff3131;
+    transform: scale(1.1);
+}
+
+
 .rodape {
     width: 100%;
     min-height: 150px;
@@ -447,3 +553,4 @@ figure:hover > .logo {
 .rodape span {
     color: #ff3131;
 }
+
