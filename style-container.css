@@ -219,105 +219,27 @@ nav ul li a {
 }
 */
 
-.navegacao-email {
-    position: absolute;
-    width: 320px;
-    height: 595px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 35px 25px;
-    gap: 40px;
-    background-color: #292929;
-    border: 3px solid #ff3131;
-    border-radius: 50px;
-    font-family: 'Quicksand', sans-serif;
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.navegacao-email .box-usuario {
-    position: relative;
-  }
-
-span {
-    font-size: 35px;
-    color: #FFF;
+.event {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.event-date {
+  font-weight: bold;
+  margin-right: 10px;
+  min-width: 50px;
+  text-align: right;
 }
 
-.navegacao-email .box-usuario input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid #ff3131;
-    outline: none;
-    background: transparent;
-  }
-  
-  .navegacao-email .box-usuario label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
-
-  
-  .navegacao-email .box-usuario input:focus ~ .label-form,
-  .navegacao-email .box-usuario input:valid ~ .label-form {
-    top: -20px;
-    left: 0;
-    color: #bdb8b8;
-    font-size: 12px;
-  }
-
-  textarea#mensagem-email {
-    width: 275px;
-    height: 220px;
-    border-radius: 10px;
-    border: 1px solid #ff3131;
-    background-color: transparent;
-    display: flex;
-    margin: 0;
-    color: #FFF;
-    align-items: start;
-    justify-content: start;
-    font-family: 'Quicksand', sans-serif;
-    padding: 5px;
-  }
-
-  .navegacao-email button {
-    font-size: 20px;
-    background-color: transparent;
-    border: 1px solid #ff3131;
-    border-radius: 10px;
-    width: 125px;
-    height: 35px;
-    color: #FFF;
-    font-family: 'Quicksand', sans-serif;
-    transition: 0.3s ease;
-  }
-
-  .navegacao-email  button i {
-    font-size: 15px;
-    transition: 0.3s linear;
-  }
-
-  .navegacao-email button:hover {
-    cursor: pointer;
-  }
-
-  .navegacao-email  button:hover {
-  color: #ff3131;
-    transform: scale(1.1);
+.event-description {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
 }

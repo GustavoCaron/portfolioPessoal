@@ -53,38 +53,6 @@ header nav ul li a::after {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-principal {
     display: flex;
     justify-content: center;
@@ -138,6 +106,12 @@ header nav ul li a::after {
     100% {-webkit-transform: translateY(0em); opacity: 0.9;}
 }
 
+h1 {
+    color: #ff3131;
+}
+
+
+
 #sobre {
     display: flex;
     flex-direction: column;
@@ -145,7 +119,6 @@ header nav ul li a::after {
     height: 100vh;
     padding-top: 130px;
 }
-
 
 .titulo {
     display: flex;
@@ -165,7 +138,7 @@ header nav ul li a::after {
 
 #sobre .conteudo-sobre {
     display: flex;
-    gap: 200px;
+    gap: 170px;
     width: 75%;
 }
 
