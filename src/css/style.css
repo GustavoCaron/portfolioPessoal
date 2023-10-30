@@ -19,6 +19,13 @@
     font-size: 18px;
 }
 
+.header nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .header .logo {
     font-size: 25px;
 }
@@ -32,6 +39,51 @@
     color: #fff;
     text-decoration: none;
 }
+
+header nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+}
+  
+.header nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container-principal {
     display: flex;
@@ -536,7 +588,8 @@ textarea#mensagem-email:focus {
 
 .navegacao-email button:hover {
     cursor: pointer;
-    color: #ff3131;
+    color: #000;
+    background-color: #ff3131;
     transform: scale(1.1);
 }
 
