@@ -12,67 +12,79 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/style-bb8.css">
     <link rel="stylesheet" href="src/css/style-toggleLinguage.css">
-    
+    <link rel="stylesheet" href="src/css/style-responsiveMenu.css">
+    <link rel="stylesheet" href="src/css/style-responsive.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
-<body>
+<body><!--
     <header class="header">
         <a href="" class="logo">&lt;LuisGustavo<span>/</span>&gt;</a>
 
         <nav>
+            <!-- <input type="checkbox" id="menu-responsivo" />
+            <label for="menu-responsivo">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label> -->
+<!--
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
-            </ul>
 
-            <div class="checkbox-apple">
-                <input class="yep" id="check-apple" type="checkbox">
-                <label for="check-apple"></label>
-            </div>
-
-            <label class="bb8-toggle">
-                <input class="bb8-toggle__checkbox" type="checkbox">
-                <div class="bb8-toggle__container">
-                    <div class="bb8-toggle__scenery">
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="bb8-toggle__star"></div>
-                        <div class="tatto-1"></div>
-                        <div class="tatto-2"></div>
-                        <div class="gomrassen"></div>
-                        <div class="hermes"></div>
-                        <div class="chenini"></div>
-                        <div class="bb8-toggle__cloud"></div>
-                        <div class="bb8-toggle__cloud"></div>
-                        <div class="bb8-toggle__cloud"></div>
+                <li>
+                    <div class="checkbox-apple">
+                        <input class="yep" id="check-apple" type="checkbox">
+                        <label for="check-apple"></label>
                     </div>
-                    <div class="bb8">
-                        <div class="bb8__head-container">
-                            <div class="bb8__antenna"></div>
-                            <div class="bb8__antenna"></div>
-                            <div class="bb8__head"></div>
+                </li>
+
+                <li>
+                    <label class="bb8-toggle">
+                        <input class="bb8-toggle__checkbox" type="checkbox">
+                        <div class="bb8-toggle__container">
+                            <div class="bb8-toggle__scenery">
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="tatto-1"></div>
+                                <div class="tatto-2"></div>
+                                <div class="gomrassen"></div>
+                                <div class="hermes"></div>
+                                <div class="chenini"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                            </div>
+                            <div class="bb8">
+                                <div class="bb8__head-container">
+                                    <div class="bb8__antenna"></div>
+                                    <div class="bb8__antenna"></div>
+                                    <div class="bb8__head"></div>
+                                </div>
+                                <div class="bb8__body"></div>
+                            </div>
+                            <div class="artificial__hidden">
+                                <div class="bb8__shadow"></div>
+                            </div>
                         </div>
-                        <div class="bb8__body"></div>
-                    </div>
-                    <div class="artificial__hidden">
-                        <div class="bb8__shadow"></div>
-                    </div>
-                </div>
-            </label>
-
+                    </label> 
+                </li>
+            </ul>
         </nav>
     </header>
-
+-->
     <main>
         <div class="container-principal">
             <div class="informacoes">
@@ -87,8 +99,14 @@
                 </div>
             </div>
 
-            <img src="src/img/image 1.png" alt="Luis Gustavo Caron">
+
+            <picture>
+                <source media="(min-width:991px)" srcset="src/img/LuisGustavoCaronDesktop.png" alt="Luis Gustavo Caron">
+                <source media="(min-width:768px)" srcset="src/img/LuisGustavoCaronTablet.png" alt="Luis Gustavo Caron">
+                <img src="src/img/LuisGustavoCaronMobile.png" alt="Luis Gustavo Caron">
+            </picture>
         </div>
+
 
         <div id="sobre">
             <div class="titulo">
@@ -96,18 +114,7 @@
                 <a href="#"><img src="src/img/setaCima.png" alt="Voltar ao início"></a>
             </div>
             <div class="conteudo-sobre">
-                <div class="informacoes">
-                    <p>Sou um cara dedicado e focado apaixonado por tecnologia.<br><br> Decidi migrar para programação no ínicio de 2022 e desde então estou em busca da minha primeira oportunidade como programador. <br><br> Sou desenvolvedor Web com foco em Front-End.</p>
-
-                    <div class="linha-temporal">
-                        <figure>
-                            <figcaption>2023</figcaption>
-                            <div class="logo">
-                                <img src="src/img/Component 15.png" alt="">
-                            </div>
-                        </figure>
-                    </div>
-                </div>
+                <p class="informacoes">Sou um cara dedicado e focado apaixonado por tecnologia.<br><br> Decidi migrar para programação no ínicio de 2022 e desde então estou em busca da minha primeira oportunidade como programador. <br><br> Sou desenvolvedor Web com foco em Front-End.</p>
                 <img src="src/img/image 4.png" alt="placeHolder">
             </div>
         </div>
@@ -240,6 +247,42 @@
                         <a href="#projetos" class="close">&times;</a>
                     </div>
                 </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3 class="titulo-card">Titulo</h3>
+                    <div class="overlay"></div>
+                    <a href="#projeto1" class="botao-card">Ver Mais</a>
+                </div>
             </div>
         </div>
 
@@ -251,7 +294,6 @@
 
             <div class="conteudo-contato">
                 <div class="links-contato">
-                    <span>Entre em contato pelas Redes Sociais</span>
                     <div class="navegacao-contato">
                         <a href="https://www.linkedin.com/in/luis-gustavo-caron-b455b4230/" target="_blank"><span
                                 class="linkedin"><i class="fab fa-linkedin-in"></i></span>Linkedin</a>
@@ -264,7 +306,7 @@
                         <a href="https://www.linkedin.com/in/luis-gustavo-caron-b455b4230/" target="_blank"><span
                                 class="discord"><i class="fab fa-discord"></i></span>Discord</a>
                 </div>
-            </div>
+            
                 <div class="navegacao-email">
                     <span>Entre em contato pelo E-Mail</span>
                     <form>

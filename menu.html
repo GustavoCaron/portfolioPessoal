@@ -4,102 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luis Gustavo Caron</title>
+
+    <link rel="stylesheet" href="style-container.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style-toggleLinguage.css">
+    <link rel="stylesheet" href="src/css/style-bb8.css">
+
 </head>
-<style>
-    header {
-        background-color: hsl(0, 0%, 16%);
-        color: #fff;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    header a {
-        text-decoration: none;
-        color: #fff;
-    }
 
-    header span {
-        color: #ff3131;
-    }
-    
-    .header {
-        display: flex;
-        max-height: 70px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header ul {
-        display: flex;
-        list-style: none;
-        
-    }
-
-    .header ul li {
-        padding: 20px;
-    }
-    
-    .logo a p {
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 3s normal;
-    }
-
-    @keyframes typing {
-        0% {
-            width: 0;
-        }
-        100% {
-            width: 100%;
-        }
-    }
-
-    a:hover > p span {
-        color: #fff;
-    }
-
-    a {
-        position: relative;
-        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-        transition-duration: 400ms;
-        transition-property: color;
-}
-
-
-a:focus:after,
-a:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-a:after {
-  content: "";
-  pointer-events: none;
-  bottom: -4px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #ff3131;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 0.4s;
-  transition-property: width, left;
-}
-
-</style>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="#"><p>&lt;LuisGustavo<span>/</span>&gt;</p></a>
-        </div>
+        <a href="" class="logo">&lt;LuisGustavo<span>/</span>&gt;</a>
 
         <nav>
+            <input type="checkbox" id="menu-responsivo" />
+            <label for="menu-responsivo">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
             <ul>
-                <li><a href="">SOBRE MIM</a></li>
-                <li><a href="">HABILIDADES</a></li>
-                <li><a href="">EXPERIÊNCIA</a></li>
-                <li><a href="">PROJETOS</a></li>
-                <li><a href="">CONTATO</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+
+                <li>
+                    <div class="checkbox-apple">
+                        <input class="yep" id="check-apple" type="checkbox">
+                        <label for="check-apple"></label>
+                    </div>
+                </li>
+
+                <li>
+                    <label class="bb8-toggle">
+                        <input class="bb8-toggle__checkbox" type="checkbox">
+                        <div class="bb8-toggle__container">
+                            <div class="bb8-toggle__scenery">
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="bb8-toggle__star"></div>
+                                <div class="tatto-1"></div>
+                                <div class="tatto-2"></div>
+                                <div class="gomrassen"></div>
+                                <div class="hermes"></div>
+                                <div class="chenini"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                                <div class="bb8-toggle__cloud"></div>
+                            </div>
+                            <div class="bb8">
+                                <div class="bb8__head-container">
+                                    <div class="bb8__antenna"></div>
+                                    <div class="bb8__antenna"></div>
+                                    <div class="bb8__head"></div>
+                                </div>
+                                <div class="bb8__body"></div>
+                            </div>
+                            <div class="artificial__hidden">
+                                <div class="bb8__shadow"></div>
+                            </div>
+                        </div>
+                    </label> 
+                </li>
             </ul>
+            
         </nav>
     </header>
 </body>

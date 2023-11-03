@@ -8,9 +8,6 @@
 
 .header nav {
     display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
 }
 
 .header nav ul {
@@ -89,10 +86,6 @@ header nav ul li a::after {
     color: #ff3131;
 }
 
-.container-principal img {
-    width: 500px;
-}
-
 .container-principal:after{
     content: url('../img/seta.png');
     position: absolute;
@@ -116,8 +109,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     padding-top: 130px;
+    margin-bottom: 130px;
 }
 
 .titulo {
@@ -187,13 +180,14 @@ figure:hover > .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-bottom: 130px;
 }
 
 .conteudo-habilidades {
     display: flex;
     width: 75%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -201,6 +195,7 @@ figure:hover > .logo {
     border-bottom: 5px solid #ff3131;
     border-radius: 25px 10px 10px 10px;
     padding: 20px;
+    max-width: 142px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -216,7 +211,7 @@ figure:hover > .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-bottom: 130px;
 }
 
 .conteudo-projetos {
@@ -330,8 +325,8 @@ figure:hover > .logo {
     display: flex;
     gap: 20px;
     background-color: #1d1d1d;
-        border: 1px solid #ff3131;
-        position: absolute;
+    border: 1px solid #ff3131;
+    position: absolute;
 }
 
 .logo-projeto {
@@ -389,14 +384,16 @@ figure:hover > .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin-bottom: 130px;
 }
 
-.conteudo-contato {
+#contato .conteudo-contato {
     display: flex;
     width: 75%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .links-contato {
     display: flex;
@@ -459,7 +456,7 @@ figure:hover > .logo {
     color: #292929;
 }
 
-.links-contato a:hover > span {
+.navegacao-contato a:hover > span {
     background-color: #292929;
     color: #fff;
 }
@@ -469,6 +466,7 @@ figure:hover > .logo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 35px 25px;
     gap: 40px;

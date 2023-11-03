@@ -1,0 +1,54 @@
+@media (max-width:991px){
+    .container-principal {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container-principal picture  {
+        order: 0;
+    }
+
+    .container-principal .informacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+    }
+
+    .container-principal .informacoes {
+        font-size: 35px;
+        gap: 10px;
+    }
+
+    .container-principal .botoes {
+        margin-top: 10px;
+    }
+    
+    .container-principal:after{
+        display: none;
+    }
+
+    #sobre .conteudo-sobre {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #habilidades .conteudo-habilidades {
+        justify-content: center;
+    }
+
+    #projetos .conteudo-projetos {
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    #projetos .card-projeto {
+        width: 275px;
+        height: 250px;
+    }
+
+    .rodape {
+        font-size: 20px;
+    }
+}
