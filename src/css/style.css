@@ -195,7 +195,7 @@ figure:hover > .logo {
     border-bottom: 5px solid #ff3131;
     border-radius: 25px 10px 10px 10px;
     padding: 20px;
-    max-width: 142px;
+    max-width: 140px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -391,7 +391,7 @@ figure:hover > .logo {
     display: flex;
     width: 75%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
