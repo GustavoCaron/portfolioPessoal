@@ -85,7 +85,7 @@ header nav ul li a::after {
 
 .container-principal .botoes a:hover {
     background-color: #ff3131;
-    color: #000;
+    color: #fff;
 }
 
 .container-principal span {
