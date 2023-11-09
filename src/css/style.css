@@ -16,11 +16,17 @@
     font-size: 18px;
 }
 
-.header nav ul li {
+.header nav ul li:nth-child(-n+5) {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.header nav ul li:nth-child(6) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .logo {
@@ -102,8 +108,6 @@ header nav ul li a::after {
 h1 {
     color: #ff3131;
 }
-
-
 
 #sobre {
     display: flex;
@@ -257,24 +261,22 @@ figure:hover > .logo {
 
 .card-projeto .botao-card {
     position: absolute;
-    top: 50%;
-    left: 50%;
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-size: 16px;
-    transform: translate(-50%, -50%);
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    flex-direction: column;
     border: none;
     opacity: 0;
     scale: 0;
     transform-origin: 0 0;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    gap: 20px;
 }
 
 .botao-card {
@@ -295,90 +297,6 @@ figure:hover > .logo {
     scale: 0.95;
 }
 
-.modal {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(29, 29, 29, 0.9);
-    transition: all 0.4s;
-}
-
-.modal:target {
-    visibility: visible;
-    opacity: 1;
-}
-
-.conteudo-modal {
-    color: #fff;
-    width: 600px;
-    height: 400px;
-    padding: 40px 25px;
-    border-radius: 75px;
-    display: flex;
-    gap: 20px;
-    background-color: #1d1d1d;
-    border: 1px solid #ff3131;
-    position: absolute;
-}
-
-.logo-projeto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.divisao {
-    width: 1px;
-    background-color: #ff3131;
-}
-
-.infos-projeto {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-projeto img{
-    width: 220px;
-    height: 145px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-
-.tecs-projeto {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    padding-top: 20px;
-}
-
-.logo-projeto a, .infos-projeto h4, .infos-projeto p {
-    font-weight: 400;
-}
-
-.infos-projeto h4 {
-    font-size: 40px;
-}
-
-.logo-projeto a, .logo-projeto span, .infos-projeto p {
-    font-size: 20px;
-}
-
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #db1f1f;
-    text-decoration: none;
-}
 
 #contato {
     display: flex;
