@@ -10,8 +10,7 @@ html {
     font-size: 35px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    color: #000;
-    background-color: #CCCCCC;
-    /* COR BG CLARO CCCCCC */
+    color: #fff;
+    background-color: #292929;
     scroll-behavior: smooth;
 }
