@@ -7,6 +7,7 @@ let body = document.body
 let titulos = document.querySelectorAll('.titulo h1')
 let logo = document.querySelector('.logo')
 let itensMenu = document.getElementsByClassName('item-menu')
+let containerPrincipal = document.querySelector('.container-principal')
 let infosContainer = document.querySelectorAll('.container-principal .informacoes p')
 let botoes = document.querySelectorAll('.botoes a')
 let conteudoSobre = document.querySelector('.conteudo-sobre .informacoes')
@@ -14,7 +15,6 @@ let navContato = document.querySelectorAll('.navegacao-contato a')
 let spanEmail = document.querySelector('.navegacao-email span')
 let inputEmail = document.querySelectorAll('.navegacao-email .box-usuario input')
 let labelEmail = document.querySelectorAll('.navegacao-email .box-usuario .label-form')
-console.log(labelEmail);
 let buttonEmail = document.querySelector('.navegacao-email button')
 let rodape = document.querySelector('.rodape p')
 
@@ -59,6 +59,7 @@ function brightnessTheme(){
     buttonEmail.style.color = "var(--cor-preta)"
     rodape.style.color = "var(--cor-branca)"
 }
+
 function darknessTheme(){
     body.style.background = "#292929"
     body.style.color = "var(--cor-branca)"
@@ -86,6 +87,14 @@ function darknessTheme(){
 
     buttonEmail.style.color = "var(--cor-branca)"
     rodape.style.color = "var(--cor-branca)"
+}
+
+function trocarSeta(){
+    if(darknessTheme()){
+        containerPrincipal.classList.add('ativo')
+    } else {
+        containerPrincipal.classList.remove('ativo')
+    }
 }
 
 brightnessTheme() //Inicializar no tema Claro
