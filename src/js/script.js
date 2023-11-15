@@ -28,7 +28,7 @@ let ctnPrincipalSpan = ["Luis Gustavo Caron", "Front-End"]
 let ctnPrincipalPortugues = ["Seja bem-vindo(a)!", `Eu sou <span>${ctnPrincipalSpan[0]}</span>`, `Sou Desenvolvedor <span>${ctnPrincipalSpan[1]}</span>`]
 let ctnPrincipalIngles = ["Welcome friend!", `I'm <span>${ctnPrincipalSpan[0]}</span>`, `I'm a <span>${ctnPrincipalSpan[1]}</span> developer`]
 let conteudoSobreMim = ["Sou um cara dedicado e focado apaixonado por tecnologia.<br><br> Decidi migrar para programação no ínicio de 2022 e desde então estou em busca da minha primeira oportunidade como programador. <br><br> Sou desenvolvedor Front-End.", "I'm a dedicated and focused guy who is passionate about technology.<br><br> I decided to migrate to programming at the beginning of 2022 and since then I've been looking for my first opportunity as a programmer. <br><br> I'm a Front-End developer."]
-let conteudoSpanEmail = ["Entre em contato pelo E-Mail", "Contact us by<br>E-Mail"]
+let conteudoSpanEmail = ["Entre em contato pelo E-Mail", "Contact me by<br>E-Mail"]
 let conteudoLabelEmail = ["Nome", "Name"]
 let conteudoRodape = ["Copyright © 2023 <span>Luis Gustavo Caron</span>. Todos os direitos reservados.", "Copyright © 2023 <span>Luis Gustavo Caron</span>. All rights reserved."]
 
