@@ -30,6 +30,7 @@ let ctnPrincipalIngles = ["Welcome friend!", `I'm <span>${ctnPrincipalSpan[0]}</
 let conteudoSobreMim = ["Sou um cara dedicado e focado apaixonado por tecnologia.<br><br> Decidi migrar para programação no ínicio de 2022 e desde então estou em busca da minha primeira oportunidade como programador. <br><br> Sou desenvolvedor Front-End.", "I'm a dedicated and focused guy who is passionate about technology.<br><br> I decided to migrate to programming at the beginning of 2022 and since then I've been looking for my first opportunity as a programmer. <br><br> I'm a Front-End developer."]
 let conteudoSpanEmail = ["Entre em contato pelo E-Mail", "Contact us by<br>E-Mail"]
 let conteudoLabelEmail = ["Nome", "Name"]
+let conteudoRodape = ["Copyright © 2023 Luis Gustavo Caron. Todos os direitos reservados.", "Copyright © 2023 Luis Gustavo Caron. All rights reserved."]
 
 
 //Alterar Tema
@@ -145,6 +146,7 @@ function englishLanguage(){
     spanEmail.innerHTML = conteudoSpanEmail[1]
     labelEmail.innerHTML = conteudoLabelEmail[1]
     curriculo[2].href = "src/docs/CURRICULUM.pdf"
+    rodape.innerHTML = conteudoRodape[1]
 }
 
 function brazilianLanguage(){
@@ -172,6 +174,7 @@ function brazilianLanguage(){
     spanEmail.innerHTML = conteudoSpanEmail[0]
     labelEmail.innerHTML = conteudoLabelEmail[0]
     curriculo[2].href = "src/docs/CURRICULO ATT.pdf"
+    rodape.innerHTML = conteudoRodape[0]
 }
 
 //Animação das divs
