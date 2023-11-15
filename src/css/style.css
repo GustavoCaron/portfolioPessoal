@@ -477,7 +477,7 @@ textarea#mensagem-email:focus {
 /* Animação */
 [data-anime] {
     opacity: 0;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 
 [data-anime = "left"]{

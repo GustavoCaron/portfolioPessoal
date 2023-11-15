@@ -207,7 +207,7 @@ function animarScroll(){
 
 animarScroll()
 if(divisao.length) {
-    window.addEventListener('scroll', debounce(function ()) {
+    window.addEventListener('scroll', debounce(function () {
         animarScroll()
     }, 200))
 }
