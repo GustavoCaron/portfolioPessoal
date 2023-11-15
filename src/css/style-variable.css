@@ -1,4 +1,8 @@
 :root {
-    --cor-preta: "#000000";
-    --cor-branca: white;
+    --cor-preta: #000000;
+    --cor-rodape: #1C1C1C;
+    --cor-branca: #FFF;
+    --cor-vermelha: #ff3131;
+    --cor-cinza: #292929;
+    --fonte: 'Quicksand', sans-serif;
 }

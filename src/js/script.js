@@ -4,6 +4,8 @@ let toggleLanguage = document.querySelector('.checkbox-apple #check-apple')
 
 //Elementos 
 let body = document.body
+let ancoraSeta = document.querySelectorAll('.titulo a img')
+let curriculo = document.querySelectorAll('.botoes a')
 let titulos = document.querySelectorAll('.titulo h1')
 let logo = document.querySelector('.logo')
 let itensMenu = document.getElementsByClassName('item-menu')
@@ -30,6 +32,14 @@ let conteudoSpanEmail = ["Entre em contato pelo E-Mail", "Contact us by<br>E-Mai
 let conteudoLabelEmail = ["Nome", "Name"]
 
 
+//Alterar Tema
+toggleTheme.addEventListener('click', () => {
+    if(toggleTheme.checked == true) {
+        darknessTheme()
+    } else {
+        brightnessTheme()
+    }
+})
 
 function brightnessTheme(){
     body.style.background = "#d8d8d8"
@@ -40,24 +50,29 @@ function brightnessTheme(){
         itensMenu[i].style.color = "var(--cor-preta)"
     }
 
-    for (let i = 0; i < infosContainer.length; i++){
+    for (i = 0; i < infosContainer.length; i++){
         infosContainer[i].style.color = "var(--cor-preta)"
     }
 
-    for (let i = 0; i < botoes.length; i++){
+    for (i = 0; i < botoes.length; i++){
         botoes[i].style.color = "var(--cor-preta)"
     }
 
-    for (let i = 0; i < navContato.length; i++){
+    for (i = 0; i < navContato.length; i++){
         navContato[i].style.color = "var(--cor-preta)"
     }
 
-    for (let i = 0; i < inputEmail.length; i++){
+    for (i = 0; i < inputEmail.length; i++){
         inputEmail[i].style.color = "var(--cor-preta)"
+    }
+
+    for(i = 0; i < ancoraSeta.length; i++){
+        ancoraSeta[i].src = "src/img//setas/setaCima.png"
     }
 
     buttonEmail.style.color = "var(--cor-preta)"
     rodape.style.color = "var(--cor-branca)"
+    containerPrincipal.classList.remove('ativo')
 }
 
 function darknessTheme(){
@@ -65,48 +80,38 @@ function darknessTheme(){
     body.style.color = "var(--cor-branca)"
     logo.style.color = "var(--cor-branca)"
 
-    for (let i = 0; i < itensMenu.length; i++){
+    for (i = 0; i < itensMenu.length; i++){
         itensMenu[i].style.color = "var(--cor-branca)"
     }
 
-    for (let i = 0; i < infosContainer.length; i++){
+    for (i = 0; i < infosContainer.length; i++){
         infosContainer[i].style.color = "var(--cor-branca)"
     }
 
-    for (let i = 0; i < botoes.length; i++){
+    for (i = 0; i < botoes.length; i++){
         botoes[i].style.color = "var(--cor-branca)"
     }
 
-    for (let i = 0; i < navContato.length; i++){
+    for (i = 0; i < navContato.length; i++){
         navContato[i].style.color = "var(--cor-branca)"
     }
 
-    for (let i = 0; i < inputEmail.length; i++){
+    for (i = 0; i < inputEmail.length; i++){
         inputEmail[i].style.color = "var(--cor-branca)"
     }
 
-    buttonEmail.style.color = "var(--cor-branca)"
-    rodape.style.color = "var(--cor-branca)"
-}
-
-function trocarSeta(){
-    if(darknessTheme()){
-        containerPrincipal.classList.add('ativo')
-    } else {
-        containerPrincipal.classList.remove('ativo')
+    for(i = 0; i < ancoraSeta.length; i++){
+        ancoraSeta[i].src = "src/img/setas/setaCimaDark.png"
     }
+
+    buttonEmail.style.color = "var(--cor-branca)"
+    rodape.style.color = "var(--cor-branca)"    
+    containerPrincipal.classList.add('ativo')   
 }
 
 brightnessTheme() //Inicializar no tema Claro
-toggleTheme.addEventListener('click', () => {
-    if(toggleTheme.checked == true) {
-        darknessTheme()
-    } else {
-        brightnessTheme()
-    }
-})
 
-
+//Alterar Idioma
 toggleLanguage.addEventListener('click', () => {
     if(toggleLanguage.checked == true) {
         englishLanguage()
@@ -114,7 +119,6 @@ toggleLanguage.addEventListener('click', () => {
         brazilianLanguage()
     }
 })
-
 
 function englishLanguage(){
     for (let i = 0; i < titulos.length; i++){
@@ -140,6 +144,7 @@ function englishLanguage(){
     conteudoSobre.innerHTML = conteudoSobreMim[1]
     spanEmail.innerHTML = conteudoSpanEmail[1]
     labelEmail.innerHTML = conteudoLabelEmail[1]
+    curriculo[2].href = "src/docs/CURRICULUM.pdf"
 }
 
 function brazilianLanguage(){
@@ -166,4 +171,43 @@ function brazilianLanguage(){
     conteudoSobre.innerHTML = conteudoSobreMim[0]
     spanEmail.innerHTML = conteudoSpanEmail[0]
     labelEmail.innerHTML = conteudoLabelEmail[0]
+    curriculo[2].href = "src/docs/CURRICULO ATT.pdf"
+}
+
+//Animação das divs
+const divisao = document.querySelectorAll('[data-anime]')
+const classeDeAnimacao = 'animate'
+
+
+const debounce = function(func, wait, immediate) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    }
+  }
+
+function animarScroll(){
+    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4)
+    divisao.forEach(function (element){
+        if((windowTop) > element.offsetTop){
+            element.classList.add(classeDeAnimacao)
+        } else {
+            element.classList.remove(classeDeAnimacao)
+        }
+    })
+}
+
+animarScroll()
+if(divisao.length) {
+    window.addEventListener('scroll', debounce(function ()) {
+        animarScroll()
+    }, 200))
 }

@@ -34,12 +34,12 @@
 }
 
 .header .logo span {
-    color: #ff3131;
+    color: var(--cor-vermelha);
 }
 
 .header a, .header nav ul li a, .header nav label {
     padding-left: 20px;
-    color: #fff;
+    color: var(--cor-branca);
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ header nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: var(--cor-vermelha);
     display: block;
     transition: 0.5s;
 }
@@ -69,8 +69,8 @@ header nav ul li a::after {
 }
 
 .container-principal .botoes a {
-    border: 1px solid #ff3131;
-    color: #fff;
+    border: 1px solid  var(--cor-vermelha);
+    color: var(--cor-branca);
     padding: 10px 15px;
     border-radius: 50px;
     font-size: 25px;
@@ -84,16 +84,16 @@ header nav ul li a::after {
 }
 
 .container-principal .botoes a:hover {
-    background-color: #ff3131;
-    color: #000;
+    background-color: var(--cor-vermelha);
+    color: var(--cor-preta);
 }
 
 .container-principal span {
-    color: #ff3131;
+    color: var(--cor-vermelha);
 }
 
 .container-principal:after{
-    content: url('../img/seta.png');
+    content: url('../img/setas/seta.png');
     position: absolute;
     height: 35px;
     bottom: 30px;
@@ -101,7 +101,7 @@ header nav ul li a::after {
 }
 
 .container-principal.ativo:after{
-    content: url('../img/setaDark.png');
+    content: url('../img/setas/setaDark.png');
     position: absolute;
     height: 35px;
     bottom: 30px;
@@ -115,7 +115,7 @@ header nav ul li a::after {
 }
 
 h1 {
-    color: #ff3131;
+    color: var(--cor-vermelha);
 }
 
 #sobre {
@@ -174,7 +174,7 @@ figcaption {
 
 figure::after {
     content: "";
-    border: 1px dashed black;
+    border: 1px dashed var(--cor-preta);
     height: 40px;
     position: absolute;
 }
@@ -189,13 +189,6 @@ figure:hover > .logo {
     transform: scale(1.1);
 }
 
-#habilidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 130px;
-}
-
 .conteudo-habilidades {
     display: flex;
     width: 75%;
@@ -204,8 +197,8 @@ figure:hover > .logo {
 }
 
 .card {
-    border: 1px solid #ff3131;
-    border-bottom: 5px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
+    border-bottom: 5px solid var(--cor-vermelha);
     border-radius: 25px 10px 10px 10px;
     padding: 20px;
     max-width: 140px;
@@ -220,16 +213,8 @@ figure:hover > .logo {
     transform: scale(1.1);
 }
 
-#projetos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 130px;
-}
-
 .conteudo-projetos {
     display: flex;
-    justify-content: flex-start;
     width: 75%;
     gap: 20px;
     flex-wrap: wrap;
@@ -240,7 +225,7 @@ figure:hover > .logo {
     width: 325px;
     height: 250px;
     padding: 10px 30px;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
@@ -273,7 +258,7 @@ figure:hover > .logo {
     font-weight: 600;
     padding: 20px 20px;
     font-size: 16px;
-    background-color: #ffffff;
+    background-color: var(--cor-branca);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -290,7 +275,7 @@ figure:hover > .logo {
 
 .botao-card {
     text-decoration: none;
-    color: #1d1d1d;
+    color: var(--cor-vermelha);
 }
 
 .card-projeto:hover .botao-card {
@@ -304,14 +289,6 @@ figure:hover > .logo {
 
 .card-projeto .botao-card:active {
     scale: 0.95;
-}
-
-
-#contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 130px;
 }
 
 #contato .conteudo-contato {
@@ -339,37 +316,37 @@ figure:hover > .logo {
     height: 70px;
     display: flex;
     align-items: center;
-    border: 1px solid #ff3131;
-    color: #000;
+    border: 1px solid var(--cor-vermelha);
+    color: var(--cor-preta);
     text-decoration: none;
     transition: 0.3s linear;
 }
 
 .navegacao-contato .linkedin, .whatsapp, .instagram, .telefone {
-    background-color: #ff3131;
+    background-color: var(--cor-vermelha);
     height: 100%;
     padding: 20px 20px;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     margin-right: 20px;
     display: flex;
     align-items: center;
 }
 
 .navegacao-contato .telefone {
-    background-color: #ff3131;
+    background-color: var(--cor-vermelha);
     height: 100%;
     padding: 0px 23px;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     margin-right: 20px;
     display: flex;
     align-items: center;
 }
 
 .navegacao-contato .discord {
-    background-color: #ff3131;
+    background-color: var(--cor-vermelha);
     height: 100%;
     padding: 0px 13px;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     margin-right: 20px;
     display: flex;
     align-items: center;
@@ -377,13 +354,13 @@ figure:hover > .logo {
 
 
 .navegacao-contato a:hover {
-    background-color: #ff3131;
-    border: 1px solid #292929;
-    color: #292929;
+    background-color: var(--cor-vermelha);
+    border: 1px solid var(--cor-cinza);
+    color: var(--cor-cinza);
 }
 
 .navegacao-contato a:hover > span {
-    color: #fff;
+    color: var(--cor-branca);
 }
 
 .navegacao-email {
@@ -395,7 +372,7 @@ figure:hover > .logo {
     text-align: center;
     padding: 35px 25px;
     gap: 40px;
-    border: 3px solid #ff3131;
+    border: 3px solid var(--cor-vermelha);
     border-radius: 50px;
 }
 
@@ -414,10 +391,10 @@ form {
     padding: 10px 0;
     font-size: 16px;
     border: none;
-    border-bottom: 1px solid #ff3131;
+    border-bottom: 1px solid var(--cor-vermelha);
     outline: none;
     background: transparent;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--fonte);
 }
 
 .navegacao-email .box-usuario label {
@@ -441,13 +418,13 @@ textarea#mensagem-email {
     width: 275px;
     height: 220px;
     border-radius: 10px;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     background-color: transparent;
     display: flex;
     margin: 0;
     align-items: start;
     justify-content: start;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--fonte);
     padding: 5px;
     resize: none;
     transition: 0.2s ease-out;
@@ -460,11 +437,11 @@ textarea#mensagem-email:focus {
 .navegacao-email button {
     font-size: 20px;
     background-color: transparent;
-    border: 1px solid #ff3131;
+    border: 1px solid var(--cor-vermelha);
     border-radius: 10px;
     width: 125px;
     height: 35px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--fonte);
     transition: 0.3s ease;
 }
 
@@ -479,8 +456,8 @@ textarea#mensagem-email:focus {
 
 .navegacao-email button:hover {
     cursor: pointer;
-    color: #000;
-    background-color: #ff3131;
+    color: var(--cor-preta);
+    background-color: var(--cor-vermelha);
     transform: scale(1.1);
 }
 
@@ -490,9 +467,24 @@ textarea#mensagem-email:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1c1c1c;
+    background-color: var(--cor-rodape);
 }
 
 .rodape span {
-    color: #ff3131;
+    color: var(--cor-vermelha);
+}
+
+/* Animação */
+[data-anime] {
+    opacity: 0;
+    transition: 0.6s;
+}
+
+[data-anime = "left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
