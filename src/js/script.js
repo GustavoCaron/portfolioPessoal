@@ -35,6 +35,7 @@ let conteudoProjetosIngles = ["Site for scheduling Airsoft matches.", "Site that
 let linkConteudoProjetos = ["Visualizar Projeto", "View Project"]
 let conteudoSpanEmail = ["Entre em contato pelo E-Mail", "Contact me by<br>E-Mail"]
 let conteudoLabelEmail = ["Nome", "Name"]
+let conteudoButtonEmail = [`Enviar <i class="fas fa-paper-plane"></i>`,`Submit <i class="fas fa-paper-plane"></i>`]
 let conteudoRodape = ["Copyright © 2023 <span>Luis Gustavo Caron</span>. Todos os direitos reservados.", "Copyright © 2023 <span>Luis Gustavo Caron</span>. All rights reserved."]
 
 
@@ -148,6 +149,7 @@ function englishLanguage(){
     spanEmail.innerHTML = conteudoSpanEmail[1]
     labelEmail.innerHTML = conteudoLabelEmail[1]
     curriculo[2].href = "src/docs/CURRICULUM.pdf"
+    buttonEmail.innerHTML = conteudoButtonEmail[1]
     rodape.innerHTML = conteudoRodape[1]
 }
 
@@ -174,6 +176,7 @@ function brazilianLanguage(){
     spanEmail.innerHTML = conteudoSpanEmail[0]
     labelEmail.innerHTML = conteudoLabelEmail[0]
     curriculo[2].href = "src/docs/CURRICULO ATT.pdf"
+    buttonEmail.innerHTML = conteudoButtonEmail[0]
     rodape.innerHTML = conteudoRodape[0]
 }
 
