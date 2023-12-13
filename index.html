@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="src/css/style-bb8.css">
     <link rel="stylesheet" href="src/css/style-variable.css">
     <link rel="stylesheet" href="src/css/style-toggleLinguage.css">
-    <link rel="stylesheet" href="src/css/style-responsiveMenu.css">
-    <link rel="stylesheet" href="src/css/style-responsive.css">
+    <!-- <link rel="stylesheet" href="src/css/style-responsiveMenu.css"> -->
+    <!-- <link rel="stylesheet" href="src/css/style-responsive.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -94,8 +94,8 @@
                 <p>Sou Desenvolvedor <span>Front-End</span></p>
 
                 <div class="botoes">
-                    <a href="https://www.linkedin.com/in/luis-gustavo-caron-b455b4230/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/GustavoCaron"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/luis-gustavo-caron-b455b4230/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/GustavoCaron" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="src/docs/CURRICULO ATT.pdf" download class="curriculo">Download CV</a>
                 </div>
             </div>
@@ -216,27 +216,61 @@
 
             <div class="conteudo-projetos">
                 <div class="card-projeto">
-                    <h3 class="titulo-card">Titulo</h3>
-                    <div class="botao-card">
-                        <h3 class="titulo-card">PROJETO 1</h3>
-                        <a href="#projeto1">Ir Para Repositório</a>
-                        <a href="#projeto1">Ir Para Deploy</a>
-                        <div class="tecs">
-                            <img src="src/.png" alt="">
-                            <img src="src/.png" alt="">
-                            <img src="src/.png" alt="">
-                        </div>
-                    </div>
+                    <h3>Battlezone Airsoft</h3>
+                    <span class="sobre-projeto">Site para agendamentos de partidas de Airsoft.</span>
+                    <span>Tecs: HTML5, CSS3, JS e NODE.JS</span>
+                    <a href="https://github.com/GustavoCaron/TCC-NV" target="_blank">Visualizar Projeto</a>
                 </div>
 
                 <div class="card-projeto">
-                    <h3 class="titulo-card">Titulo</h3>
-                    <div class="botao-card">
-                        <h3 class="titulo-card">Titulo</h3>
-                        <a href="#projeto1">Ir Para Repositório</a>
-                        <a href="#projeto1">Ir Para Deploy</a>
-                    </div>
+                    <h3>API GitHub Project</h3>
+                    <span class="sobre-projeto">Site que busca informações do usuário no Github através da API.</span>
+                    <span>Tecs: HTML5, CSS3, JS.</span>
+                    <a href="https://github.com/GustavoCaron/ProjetoAPIGitHub" target="_blank">Visualizar Projeto</a>
                 </div>
+
+                <div class="card-projeto">
+                    <h3>QRCode Component</h3>
+                    <span class="sobre-projeto">Primeiro projeto realizado através do site Front-End Mentor.</span>
+                    <span>Tecs: HTML5 e CSS3</span>
+                    <a href="https://github.com/GustavoCaron/QRCodeComponent" target="_blank">Visualizar Projeto</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3>Landing Page</h3>
+                    <span class="sobre-projeto">Projeto de Landing Page construído durante o curso DevQuest do Dev em dobro.</span>
+                    <span>Tecs: HTML5 e CSS3</span>
+                    <a href="https://github.com/GustavoCaron/LandingPageDevQuest" target="_blank">Visualizar Projeto</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3>CWB Run</h3>
+                    <span class="sobre-projeto">Jogo baseado no T-REX Game, com inspiração na cidade de Cwb.</span>
+                    <span>Tecs: Python</span>
+                    <a href="https://github.com/GustavoCaron/CWBRun" target="_blank">Visualizar Projeto</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3>NLW eSports</h3>
+                    <span class="sobre-projeto">Projeto construído do evento Next Level Week da Rocketseat.</span>
+                    <span>Tecs: HTML5 e CSS3</span>
+                    <a href="https://github.com/GustavoCaron/nlw-sports" target="_blank">Visualizar Projeto</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3>Projeto Fender</h3>
+                    <span class="sobre-projeto">Projeto construído durante a DevWeek, do Dev em Dobro.</span>
+                    <span>Tecs: HTML5, CSS3 e JS.</span>
+                    <a href="https://github.com/GustavoCaron/ProjetoFender" target="_blank">Visualizar Projeto</a>
+                </div>
+
+                <div class="card-projeto">
+                    <h3>Sync360</h3>
+                    <span class="sobre-projeto">Projeto construído para o teste desafio da Empresa Sync360.</span>
+                    <span>Tecs: HTML5, CSS3 e JS.</span>
+                    <a href="https://github.com/GustavoCaron/TestSync360" target="_blank">Visualizar Projeto</a>
+                </div>
+
             </div>
         </div>
 
@@ -258,7 +292,7 @@
             
                 <div class="navegacao-email">
                     <span>Entre em contato pelo E-Mail</span>
-                    <form>
+                    <form action="https://formsubmit.co/guscar39@gmail.com" method="POST">
                         <div class="box-usuario">
                             <input type="text" name="nome" required="">
                             <label class="label-form">Nome</label>
@@ -269,8 +303,10 @@
                         </div>
                         <textarea name="mensagem-email" id="mensagem-email" cols="30" rows="10"
                                 placeholder="Digite Sua Mensagem"></textarea>
+                        <input type="hidden" name="_next" value="https://gustavocaron.github.io/portfolioPessoal/#contato">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
                     </form>
-                    <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>

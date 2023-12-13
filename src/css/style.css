@@ -221,74 +221,46 @@ figure:hover > .logo {
 }
 
 .card-projeto {
-    position: relative;
-    width: 325px;
+    width: 380px;
     height: 250px;
-    padding: 10px 30px;
-    border: 1px solid var(--cor-vermelha);
+    padding: 25px;
+    border: 2px solid var(--cor-vermelha);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    overflow: hidden;
+    transition: 0.3s linear;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: rgba(29, 29, 29, 0.6);
-    transition: opacity 0.3s ease;
-    pointer-events: none;
+.card-projeto  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.card-projeto:hover .overlay {
-    opacity: 1;
-    pointer-events: auto;
+.card-projeto span {
+    font-size: 20px;
 }
 
-.card-projeto .botao-card {
-    position: absolute;
-    font-weight: 600;
-    padding: 20px 20px;
-    font-size: 16px;
-    background-color: var(--cor-branca);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: none;
-    opacity: 0;
-    scale: 0;
-    transform-origin: 0 0;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.15);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    gap: 20px;
-}
-
-.botao-card {
+.card-projeto a {
+    width: max-content;
+    margin-top: 20px;
+    font-size: 20px;
     text-decoration: none;
     color: var(--cor-vermelha);
+    font-weight: 500;
 }
 
-.card-projeto:hover .botao-card {
-    opacity: 1;
-    scale: 1;
+.card-projeto a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--cor-vermelha);
+    display: block;
+    transition: 0.5s;
 }
-
-.card-projeto .botao-card:hover {
-    box-shadow: 0 0 0px 5px rgba(0, 0, 0, 0.3);
-}
-
-.card-projeto .botao-card:active {
-    scale: 0.95;
+  
+.card-projeto a:hover::after {
+    width: 100%;
 }
 
 #contato .conteudo-contato {
@@ -441,17 +413,15 @@ textarea#mensagem-email:focus {
     border-radius: 10px;
     width: 125px;
     height: 35px;
+    top: 500px;
     font-family: var(--fonte);
     transition: 0.3s ease;
+    margin-left: 27%;
 }
 
 .navegacao-email button i {
     font-size: 15px;
     transition: 0.3s linear;
-}
-
-.navegacao-email button:hover {
-    cursor: pointer;
 }
 
 .navegacao-email button:hover {
